@@ -8,12 +8,49 @@
 
 <body>
     <main>
+        <a href="index.html"> Homepage</a> <br>
+        <a href="donors.html"> Donors Page</a>
         <form id="hospital">
             <fieldset>
+                <legend>Information about The Hospital</legend>
+                <label>Hospital Name: </label>
+                <input type="text" name="name" placeholder="Enter the hospital name">
+                <label>Location: </label>
+                <select name="location">
+                    <option value="Irbed">Irbed</option>
+                    <option value="Ajloon">Ajloon</option>
+                    <option value="Jarash">Jarash</option>
+                    <option value="Zarqa'a">Zarqa'a</option>
+                    <option value="Assalt">Assalt</option>
+                    <option value="Amman">Amman</option>
+                    <option value="AlKarak">AlKarak</option>
+                    <option value="Tafilah">Tafilah</option>
+                    <option value="Ma'an">Ma'an</option>
+                    <option value="Aaba">Aaba</option>
+                    <option value="AlMafraq">AlMafraq</option>
+                </select><br>
+                <label>Blood Type:</label> <br>
+                <input type="checkbox" name="A+">A+ <br>
+                <input type="checkbox" name="A-">A- <br>
+                <input type="checkbox" name="B+">B+ <br>
+                <input type="checkbox" name="B-">B- <br>
+                <input type="checkbox" name="AB+">AB+ <br>
+                <input type="checkbox" name="AB-">AB- <br>
+                <input type="checkbox" name="O+">O+ <br>
+                <input type="checkbox" name="O-">O- <br>
+
+                <label>Quantity</label>
+                <input type="number" name="quantity" placeholder="Enter how many units">
+                <label>The Email</label>
+                <input type="email" name="email" placeholder="Enter the hospital email">
 
             </fieldset>
-
+            <button type="submit">Submit</button>
         </form>
+<div>
+    <ul id="donorInfo"></ul>
+</div>
+        
     </main>
 </body>
 
