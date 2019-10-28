@@ -1,4 +1,5 @@
 'use strict'
+Donar.all=[];
 
 function Donar(name,bloodType,location,age,mail) {
     this.name = name,
@@ -8,10 +9,10 @@ function Donar(name,bloodType,location,age,mail) {
     this.mail=mail,
     Donar.all.push(this)
 }
-Donar.all=[];
 
-
-
+var donar1=new Donar('ahmad','O+','Amman',36,'ahmad_lkki@gmail.com')
+var form = document.getElementById("donor");
+console.log('form : ', form);
 
 // console.log('container : ', container);
 function addElement(tagName, container, text) {
@@ -49,17 +50,19 @@ function addElement(tagName, container, text) {
             }
             else{
                 
-                var newDonor=new Donar(donorName,donorBlood,donorLocation,donorAge);
+                var newDonor= new Donar(donorName,donorBlood,donorLocation,donorAge);
                 // Donar.all.push(newDonor);
                 
-                localStorage.setItem('donorKey',JSON.stringify(Donar.all));
+                 localStorage.setItem('donorKey',JSON.stringify(Donar.all));
                 // renderToHospital ();
+                // returnDate();
+
             }
         }
 
 
 
-    var form = document.getElementById('donor');
+    
 
     form.addEventListener('submit', submitHandler);
 
@@ -79,6 +82,20 @@ for(var i=0;i<Donar.all.length;i++){
 }
     }
 
+// function returnDate(){    
+//  var donorsArray =JSON.parse(localStorage.getItem('donorKey'));
+//  if(donorsArray){
+// for(var i=0;i<donorsArray.length;i++){
 
+//     var instanceFromStorage=donorsArray[i];
+//     var instanceFromConsractor=Donar.all[i];
 
-
+//     // instanceFromConsractor.push(instanceFromStorage);
+//     instanceFromConsractor.name=instanceFromStorage.name;
+//     instanceFromConsractor.bloodType=instanceFromStorage.bloodType;
+//     instanceFromConsractor.location=instanceFromStorage.location;
+//     instanceFromConsractor.age=instanceFromStorage.age;
+//     instanceFromConsractor.mail=instanceFromStorage.mail;
+// }
+// }
+// }
