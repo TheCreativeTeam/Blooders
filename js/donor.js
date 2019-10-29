@@ -1,4 +1,5 @@
 'use strict'
+var mapArray=[];
 
 var donar1 = new Donar('ahmad', 'O+', 'Amman', 36, 'ahmad_lkki@gmail.com')
 var form = document.getElementById("donor");
@@ -15,6 +16,7 @@ function addElement(tagName, container, text) {
     return element;
 }
 
+var locationDonor
 
 function submitHandler(event) {
     event.preventDefault();
@@ -29,6 +31,7 @@ function submitHandler(event) {
     var donorAge = event.target.age.value;
     var donorEmail = event.target.email.value;
 
+    locationDonor=donorLocation;
 
     if (donorAge < 18) {
         alert('You are under 18')
@@ -40,9 +43,12 @@ function submitHandler(event) {
 
         localStorage.setItem('donorKey', JSON.stringify(Donar.all));
 
-        // returnDate();
-
+        if(locationDonor=='Amman'){
+            
+        
+        }
     }
+    return locationDonor;
 }
 
 
@@ -51,9 +57,12 @@ function submitHandler(event) {
 
 form.addEventListener('submit', submitHandler);
 
+var ll= Donar.all[Donar.all.length-1].location
 
 
-
+if(locationDonor=='Tafilah'){
+    alert('tafila');
+}
 
 
 
