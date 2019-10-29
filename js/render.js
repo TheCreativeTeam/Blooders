@@ -11,7 +11,7 @@ function render(event) {
         var li = document.createElement('li');
 
         container.appendChild(li);
-        li.textContent = instanceDonor.name + ", blood type is " + instanceDonor.bloodType + ' from ' + instanceDonor.location+'   email addres: '+instanceDonor.email;
+        li.textContent = instanceDonor.name + ",s blood type is " + instanceDonor.bloodType + ', and he/she lives in ' + instanceDonor.location+',  his/here email addres is '+instanceDonor.email + " for contacting.";
         // + ", "+ instanceDonor.email + " for contacting" ;
 
     }

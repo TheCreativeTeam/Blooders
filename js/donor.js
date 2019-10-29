@@ -45,10 +45,6 @@ function submitHandler(event) {
     }
 }
 
-
-
-
-
 form.addEventListener('submit', submitHandler);
 
 

@@ -18,17 +18,8 @@ hospitalForm.addEventListener('submit', function (event) {
     // newHospital.render();
 });
 
-//  var waitingList = document.getElementById('list');
 
 
-//  Hospital.prototype.render = function () {
-//     waitingList.innerHTML=' '
-//     for (var i = 0; i < Hospital.all.length; i++) {
-//         // console.log('list',waitingList)
-//         var instance = Hospital.all[i];
-//         // console.log('ins',instance)
-//         var headeer = document.createElement('h1');
-//         waitingList.appendChild(headeer);
-//         headeer.textContent = "There are patients in " + instance.name + " hospital need " + instance.quantity + " units of " + instance.type + " blood type.";
-//     }
-//  }
+
+
+
