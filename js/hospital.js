@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function Hospital(name, location, type, quantity, email) {
     this.name = name,
         this.location = location,
@@ -47,6 +48,28 @@ function Hospital(name, location, type, quantity, email) {
         }
       }
  ///////////////////////
+=======
+
+
+var hospitalForm = document.getElementById('hospital');
+
+
+
+hospitalForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    var name = event.target.name.value;
+    var location = event.target.location.value;
+    var type = event.target.type.value;
+    var quantity = event.target.quantity.value;
+    var email = event.target.email.value;
+    var newHospital = new Hospital(name, location, type, quantity, email)
+    console.log(newHospital);
+    // console.log('Hospital.all : ', Hospital.all);
+    localStorage.setItem('hospitalKey', JSON.stringify(Hospital.all));
+    // newHospital.render();
+});
+
+>>>>>>> da1e3ad3d6808f633b7ade94082cafd8bf9d9a8a
 //  var waitingList = document.getElementById('list');
 
 

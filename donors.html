@@ -1,48 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Document</title>
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
 </head>
+
 <body>
-   <main>
-       <a href="index.html"> Homepage</a> <br>
-       <a href="hospital.html"> Hospitals Page</a>
-       <form id="donor" action="js/app.js">
-           <fieldset>
-               <legend>Information about The Donor</legend>
-               <label>Donor Name: </label>
-               <input type="text" name="name" placeholder="Enter your name">
-               <label>Location: </label>
-               <select name="location">
-                   <option value="Irbed">Irbed</option>
-                   <option value="Ajloon">Ajloon</option>
-                   <option value="Jarash">Jarash</option>
-                   <option value="Zarqa'a">Zarqa'a</option>
-                   <option value="Assalt">Assalt</option>
-                   <option value="Amman">Amman</option>
-                   <option value="AlKarak">AlKarak</option>
-                   <option value="Tafilah">Tafilah</option>
-                   <option value="Ma'an">Ma'an</option>
-                   <option value="Aaba">Aaba</option>
-                   <option value="AlMafraq">AlMafraq</option>
-               </select> <br>
-               <label>Blood Type</label> <br>
-               <input type="radio" name="type" value="A+">A+ <br>
-               <input type="radio" name="type" value="A-">A- <br>
-               <input type="radio" name="type" value="B+">B+ <br>
-               <input type="radio" name="type" value="B-">B- <br>
-               <input type="radio" name="type" value="AB+">AB+ <br>
-               <input type="radio" name="type" value="AB-">AB- <br>
-               <input type="radio" name="type" value="O+">O+ <br>
-               <input type="radio" name="type" value="O-">O- <br>
-               <label>The Donor Age</label>
-               <input type="number" name="age" placeholder="Enter your age">
-               <label>The Email</label>
-               <input type="email" name=" email" placeholder="Enter your email">
-           </fieldset>
-           <button type="submit">Submit</button>
-       </form>
-       <script src="js/app.js"></script>
-   </main>
+    <main>
+        <a href="index.html"> Homepage</a> <br>
+        <a href="hospital.html"> Hospitals Page</a>
+        <form id="donor" action="js/app.js">
+            <fieldset>
+                <legend>Information about The Donor</legend>
+                <label>Donor Name: </label>
+                <input type="text" name="name" placeholder="Enter your name">
+                <label>Location: </label>
+                <select name="location">
+                    <option value="Irbed">Irbed</option>
+                    <option value="Ajloon">Ajloon</option>
+                    <option value="Jarash">Jarash</option>
+                    <option value="Zarqa'a">Zarqa'a</option>
+                    <option value="Assalt">Assalt</option>
+                    <option value="Amman">Amman</option>
+                    <option value="AlKarak">AlKarak</option>
+                    <option value="Tafilah">Tafilah</option>
+                    <option value="Ma'an">Ma'an</option>
+                    <option value="Aaba">Aaba</option>
+                    <option value="AlMafraq">AlMafraq</option>
+                </select> <br>
+                <label>Blood Type</label> <br>
+                <input type="radio" name="type" value="A+">A+ <br>
+                <input type="radio" name="type" value="A-">A- <br>
+                <input type="radio" name="type" value="B+">B+ <br>
+                <input type="radio" name="type" value="B-">B- <br>
+                <input type="radio" name="type" value="AB-">AB- <br>
+                <input type="radio" name="type" value="AB+">AB+ <br>
+                <input type="radio" name="type" value="O+">O+ <br>
+                <input type="radio" name="type" value="O-">O- <br>
+                <label>The Donor Age</label>
+                <input type="number" name="age" placeholder="Enter your age">
+                <label>The Email</label>
+                <input type="email" name="email" placeholder="Enter your email">
+            </fieldset>
+            <button type="submit">Submit</button>
+
+
+
+
+
+            <div>
+                <h4>Hospitals in your city</h4>
+                <select name="location">
+                        <option value="Irbed">Irbed</option>
+                        <option value="Ajloon">Ajloon</option>
+                        <option value="Jarash">Jarash</option>
+                        <option value="Zarqa'a">Zarqa'a</option>
+                        <option value="Assalt">Assalt</option>
+                        <option value="Amman">Amman</option>
+                        <option value="AlKarak">AlKarak</option>
+                        <option value="Tafilah">Tafilah</option>
+                        <option value="Ma'an">Ma'an</option>
+                        <option value="Aaba">Aaba</option>
+                        <option value="AlMafraq">AlMafraq</option>
+
+            </div>
+
+            <div id="map"></div>
+
+        </form>
+        <script src="js/app.js"></script>
+        <script src="js/donor.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7KV4GCbkDxEQw42B5kVT4Ai4TV69JlAw&callback=initMap"
+        async defer></script>
+
+
+        <!-- <script src="render.js"></script> -->
+    </main>
 </body>
+
 </html>
