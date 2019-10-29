@@ -3,6 +3,21 @@
 
 <head>
     <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+            /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+            #map {
+              height: 100%;
+            }
+            /* Optional: Makes the sample page fill the window. */
+            html, body {
+              height: 100%;
+              margin: 0;
+              padding: 0;
+            }
+          </style>
 </head>
 
 <body>
@@ -43,9 +58,37 @@
                 <input type="email" name="email" placeholder="Enter your email">
             </fieldset>
             <button type="submit">Submit</button>
+
+
+
+
+
+            <div>
+                <h4>Hospitals in your city</h4>
+                <select name="location">
+                        <option value="Irbed">Irbed</option>
+                        <option value="Ajloon">Ajloon</option>
+                        <option value="Jarash">Jarash</option>
+                        <option value="Zarqa'a">Zarqa'a</option>
+                        <option value="Assalt">Assalt</option>
+                        <option value="Amman">Amman</option>
+                        <option value="AlKarak">AlKarak</option>
+                        <option value="Tafilah">Tafilah</option>
+                        <option value="Ma'an">Ma'an</option>
+                        <option value="Aaba">Aaba</option>
+                        <option value="AlMafraq">AlMafraq</option>
+
+            </div>
+
+            <div id="map"></div>
+
         </form>
         <script src="js/app.js"></script>
         <script src="js/donor.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7KV4GCbkDxEQw42B5kVT4Ai4TV69JlAw&callback=initMap"
+        async defer></script>
+
+
         <!-- <script src="render.js"></script> -->
     </main>
 </body>
