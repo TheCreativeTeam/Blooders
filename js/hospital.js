@@ -24,7 +24,29 @@ function Hospital(name, location, type, quantity, email) {
         localStorage.setItem('hospitalKey', JSON.stringify(Hospital.all));
         // newHospital.render();
     });
- 
+//////////////////////////////
+    function getStoredData() {
+
+        // retreive the stored into about list of product
+        var dataString = localStorage.getItem('hospitalKey');
+      
+        var objectArray = JSON.parse(dataString);
+        if(dataString) {
+          
+      
+          for(var i=0; i < objectArray.length; i++) {
+            var rawObject = objectArray[i];
+           new Hospital(
+              rawObject.name,
+              rawObject.location,
+              rawObject.type,
+              rawObject.quantity,
+              rawObject.email, 
+           )
+          }
+        }
+      }
+ ///////////////////////
 //  var waitingList = document.getElementById('list');
 
 
