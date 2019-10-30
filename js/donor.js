@@ -61,8 +61,8 @@ var ll= Donar.all[Donar.all.length-1].location
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat:32.016879, lng: 35.865915},
-    zoom: 7 
+    center: firstC,
+    zoom: 10 
   }
   
 

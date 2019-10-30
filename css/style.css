@@ -1,9 +1,9 @@
+
 #demotext a {
    color: #414444;
    color: #f30712;
    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
    font-size: 35px;
-   float: left;
    display: inline-block;
    
    
@@ -94,17 +94,27 @@
          font-family: 'Staatliches', cursive;
          text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(240, 240, 235), 0 -10px 20px #554a3f, 0 -18px 40px #F00;
     }
-    body {
-        background: url("/img/download.jpg");
-   
+    body { 
    text-align: center;
-    background: url("/img/pngtree-ink-rainbow-color-multicolor-gradient-overlay-background-poster-colorrainbowmulticolorgradientsuperimposedbackgroundpostermaterialelement-image_49453.jpg") ; */
-   background-repeat: no-repeat;
-   background-size: auto;
-   background-size: 1000px 3000px;
-   background: rgb(211, 212, 211);
+   background: url("/img/pngtree-ink-rainbow-color-multicolor-gradient-overlay-background-poster-colorrainbowmulticolorgradientsuperimposedbackgroundpostermaterialelement-image_49453.jpg") ;
     }
    
    
    
- 
+   #hos-form {
+   text-align: left;
+   font-size: 25px;
+   
+   
+   
+   }
+    
+   .hospital {
+   
+       text-align: left;
+   }
+   
+   li{
+       margin-bottom: 30px;
+      color: black;
+   }

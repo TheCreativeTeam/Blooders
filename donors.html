@@ -1,22 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-        <title>Bloode</title>
-     
-</head>
+    <title>Hospital</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dosis|Lobster|Ubuntu&display=swap" rel="stylesheet">
 
-<body>
+
+</head>
+<header class="hbc">
+        <h1 style="margin-right: 500px;" id="first"> Blood donation </h1>
+        <img style="float: left;  width: 160px; margin-top: 40px; margin-left: 500px;" src="img/loogo.png" alt="">
+        <div>
+            <nav style=" display: inline;   ">
+                <!-- <a class="navbar-brand" href="#"><img src="/img/logoo1.jpg"></a> -->
+    
+    
+                <ul style=" text-align: center; ">
+    
+    
+    
+                        <li id="demotext">
+                                <a class="nav-link" href="index.html">Home page</a>
+                            </li>
+    
+                    <li id="demotext">
+                        <a class="nav-link" href="hospital.html">Hospital</a>
+                    </li>
+    
+   
+                    <li id="demotext">
+                        <a class="nav-link" href="general.html">General Information </a>
+                    </li>
+    
+    
+                    <li id="demotext">
+                        <a class="nav-link" href="/#about">About Us</a>
+                    </li>
+                    <li id="demotext">
+                        <a class="nav-link" href="blooders.html"> Blooders Team </a>
+                    </li>
+                    <li id="demotext">
+                            <a class="nav-link" href="quiz.html"> Test Your information </a>
+                        </li>
+        
+    
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+<body style=" background:url(https://www.urbannetwork.co.uk/wp-content/uploads/2014/12/Grey-background.jpg);">
     <main>
-        <a href="index.html"> Homepage</a> <br>
-        <a href="hospital.html"> Hospitals Page</a>
+       
         <form id="donor" action="js/app.js">
-            <fieldset>
-                <legend>Information about The Donor</legend>
+            <fieldset style="height: 700px; width: 1000px; text-align: center; margin-left: 530px; " >
+                <legend style="text-align: left; padding-left: 50px; font-size: 40px;"> <h2>Information about The Donor </h2></legend>
+                <div  style="text-align: left; padding-left: 50px; font-size: 25px; font-family: 'Courgette', cursive;"> 
                 <label>Donor Name: </label>
-                <input type="text" name="name" placeholder="Enter your name">
-                <label>Location: </label>
-                <select name="location">
+                <input style=" font-size: 25px;" type="text" name="name" placeholder="Enter your name">
+                &nbsp; &nbsp;  &nbsp; <label>Location: </label>
+                <select style=" font-size: 25px;" name="location">
                     <option value="Irbed">Irbed</option>
                     <option value="Ajloon">Ajloon</option>
                     <option value="Jarash">Jarash</option>
@@ -26,10 +75,10 @@
                     <option value="AlKarak">AlKarak</option>
                     <option value="Tafilah">Tafilah</option>
                     <option value="Ma'an">Ma'an</option>
-                    <option value="Aaba">Aaba</option>
+                    <option value="Aaba">Aqaba</option>
                     <option value="AlMafraq">AlMafraq</option>
-                </select> <br>
-                <label>Blood Type</label> <br>
+                </select> <br><br> <br>
+                <label>Blood Type</label> <br> 
                 <input type="radio" name="type" value="A+">A+ <br>
                 <input type="radio" name="type" value="A-">A- <br>
                 <input type="radio" name="type" value="B+">B+ <br>
@@ -38,19 +87,20 @@
                 <input type="radio" name="type" value="AB+">AB+ <br>
                 <input type="radio" name="type" value="O+">O+ <br>
                 <input type="radio" name="type" value="O-">O- <br>
-                <label>The Donor Age</label>
-                <input type="number" name="age" placeholder="Enter your age">
-                <label>The Email</label>
-                <input type="email" name="email" placeholder="Enter your email">
-            </fieldset>
-            <button type="submit">Submit</button>
+                <br><br> <br> <label>The Donor Age</label>
+                <input style=" font-size: 25px;" type="number" name="age" placeholder="Enter your age">
+                &nbsp; &nbsp;  &nbsp; <label>The Email</label>
+                <input style=" font-size: 25px;" type="email" name="email" placeholder="Enter your email">
+            </fieldset> <br> <br> <br>
+            <button style="background-color: rgb(167, 22, 22);"> <a
+                style="font-family: 'Courgette', cursive; font-size: 25px; text-decoration: none; color: rgb(252, 249, 249); text-align: center; " type="submit">Submit</button>
 
 
 
 
 
             <div>
-                <h4><a href="maps.html">Hospitals in your choosen city</a> </h4>
+                <h4><a style="font-size: 25px;" href="maps.html">Hospitals in your choosen city</a> </h4>
 
             
               

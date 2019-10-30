@@ -13,14 +13,14 @@ function Donar(name, bloodType, location, age, email) {
 var donorsArray = []
 donorsArray = JSON.parse(localStorage.getItem('donorKey'))
 
-
+if(donorsArray){
 for (i = 0; i < donorsArray.length; i++) {
 
     var donorInfo = donorsArray[i];
     new Donar(donorInfo.name, donorInfo.bloodType, donorInfo.location, donorInfo.age, donorInfo.email);
 
 
-}
+}}
 
 
 
@@ -39,14 +39,14 @@ function Hospital(name, location, type, quantity, email) {
 var demands = [];
 demands = JSON.parse(localStorage.getItem('hospitalKey'));
 
-
+if(demands){
 for (var i = 0; i < demands.length; i++) {
 
     var hospitalInfo = demands[i];
     new Hospital(hospitalInfo.name, hospitalInfo.bloodType, hospitalInfo.location, hospitalInfo.age, hospitalInfo.email);
 
 
-}
+}}
 
 // function Maps(lat,lng) {
 //     this.lat=lat,
@@ -150,3 +150,82 @@ if (choosenLocation == 'Irbed') {
 }
 
 
+
+
+//creating a chart
+
+var demandData = Hospital.all.length;
+var donorsData = Donar.all.length;
+ 
+ 
+// var ctx = document.getElementById('chart').getContext('2d');
+// var myChart = new Chart(ctx, {
+  
+//    type: 'bar',
+//    data: {
+//        labels: ['Donars & Demands'],
+//        datasets: [{
+         
+//            label: '# of Donors',
+//            data: [donorsData],
+           
+//            backgroundColor: [
+//                'rgba(255, 99, 132, 0.2)',
+//                'rgba(54, 162, 235, 0.2)',
+               
+//            ],
+//            borderColor: [
+//                'rgba(255, 99, 132, 1)',
+//                'rgba(54, 162, 235, 1)',
+               
+//            ],
+//            borderWidth: 1
+           
+//        },
+//        {
+//          label: '# of Demands',
+//          data: [demandData],
+//          backgroundColor: [
+//            'rgba(54, 162, 235, 0.2)',
+//              'rgba(255, 99, 132, 0.2)',
+             
+//          ],
+//          borderColor: [
+//            'rgba(54, 162, 235, 1)',
+//              'rgba(255, 99, 132, 1)',
+             
+//          ],
+//          borderWidth: 1
+//      }]
+//    },
+//    options: {
+//        scales: {
+//            yAxes: [{
+//                ticks: {
+//                    beginAtZero: true
+//                }
+//            }]
+//        }
+//    }
+// });
+
+new Chart(document.getElementById("chart"), {
+    type: 'doughnut',
+    data: {
+      labels: ["Donors", "Blood Demands"],
+      datasets: [
+        {
+          label: "Donors & Blood Demands",
+          backgroundColor: ["#8e5ea2","#e8c3b9"],
+          data: [donorsData,demandData],
+          
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Blood Donation in Jordan from 2019'
+      }
+    }
+});
