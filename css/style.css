@@ -1,120 +1,201 @@
-
 #demotext a {
-   color: #414444;
-   color: #f30712;
-   text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
-   font-size: 35px;
-   display: inline-block;
-   
-   
-   }
-   
-    h1{
-       height: 90px;
-       font-size: 90px;
-       font-family: 'Staatliches', cursive;
-       text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
-       color: rgb(93, 87, 87);
-       display: inline-block;
-   
-   
-   }
-     h2 {
-       text-align: initial;
-       font-family: 'Staatliches', cursive;
-       text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
-       color: rgb(93, 87, 87);
-       display: inline-block;
-     }   
-   
-   .soh {
-      
-       text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
-          color: #EF410F;  
-   }
-   
-   
-   .formm1 {
-   text-align: left;
-   font-size: 30px;
-   
-   }
-   
-   
-   .html {
-       background-image: url("/img/pngtree-all-girls-fashion-soft-gradient-color-blocks-poster-background-backgroundposterbackgroundteenage-girl-image_57373.jpg");
-   
-   }
-   .section  {
-       background: url("/img/form1.jpg");
-   
-   }
-   
-           #headings {
-               color: #FFFFFF;
-               background: #c7a1a1;
-               text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #8372d1, 0 0 30px rgb(143, 148, 207), 0 0 40px rgb(141, 142, 221), 0 0 55px rgb(156, 158, 156), 0 0 75px #a2aca0;
-               text-align: center;
-               color: #FFFFFF;
-               background: #f04646;
-               }
-   
-       nav {
-       display: inline-block;
-      
-    }
-       
-       header div ul li {
-       display: inline-block;
-          text-decoration: none;
-       text-align: center;
-       padding: 20px;
-       
-   
-    }
-   
-    header li a {
-       text-align: center;
-       color: red;
-        display: inline-block;
-        text-decoration: none;
-        padding: 20px;
-        text-decoration: none;
-       border-radius: yellow 500px;
-   text-align: center;
-   font-family: 'Staatliches', cursive;
-   font-size: 30px;
-    }
-   
-   
-    body div h1  {
-   
-       
-       font-size: 50px;
-         font-family: 'Staatliches', cursive;
-         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(240, 240, 235), 0 -10px 20px #554a3f, 0 -18px 40px #F00;
-    }
-    body { 
-   text-align: center;
-   background: url("/img/pngtree-ink-rainbow-color-multicolor-gradient-overlay-background-poster-colorrainbowmulticolorgradientsuperimposedbackgroundpostermaterialelement-image_49453.jpg") ;
-    }
-   
-   
-   
-   #hos-form {
-   text-align: left;
-   font-size: 25px;
-   
-   
-   
-   }
+    color: #f30712;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    font-size: 25px;
+    display: inline-block;
     
-   .hospital {
+    }
+    
+    
+    
+     h1{
+        margin-top: 50px; 
+        text-align: center;
+        margin-left: 50px;
+        height: 90px;
+        font-size: 90px;
+        font-family: 'Staatliches', cursive;
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+        color: rgb(93, 87, 87);
+        display: inline-block;
+    
+    
+    }
+    footer{
+    
+        color: rgb(83, 97, 97); text-align: center;
+    }
+    header img {
+        margin-top: 50px;
+        float: left;
+        width: 100px;
+        margin-left: 300px;
+    
+    }
    
-       text-align: left;
-   }
-   
-   li{
-       margin-bottom: 30px;
-      color: black;
-   }
+    
+    header div nav {
+        /* margin-right: 100px; */
+        display: inline;
+    }
+    header div nav ul {
+        text-align: center;
+    }
+    
+    
+      h2 {
+        text-align: initial;
+        font-family: 'Staatliches', cursive;
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+        color: rgb(93, 87, 87);
+        display: inline-block;
+        font-size: 45px;
+      }   
+    
+      body { 
+    
+        background: url("https://www.urbannetwork.co.uk/wp-content/uploads/2014/12/Grey-background.jpg") ;
+         }
+    
+         body section {
+            text-align: left; width: 1000px; margin-right: auto; margin-left: auto;
+         }
+         body section p {
+    
+            font-family: 'Courgette', cursive; font-size: 25px;
+         }
+    
+    .soh {
+       
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+           color: #EF410F;  
+    }
+    
+    
+    .formm1 {
+    text-align: left;
+    font-size: 30px;
+    
+    
+    }
+    
+    
+    .html {
+        background-image: url("/img/pngtree-all-girls-fashion-soft-gradient-color-blocks-poster-background-backgroundposterbackgroundteenage-girl-image_57373.jpg");
+    
+    }
+    .section  {
+        background: url("/img/form1.jpg");
+    
+    }
+    
+           
+        nav {
+        display: inline-block;
+       
+     }
+        
+        header div ul li {
+        display: inline-block;
+           text-decoration: none;
+        text-align: center;
+        padding: 20px;
+        
+    
+     }
+    
+     header li a {
+        text-align: center;
+        color: red;
+         display: inline-block;
+         text-decoration: none;
+         padding: 20px;
+         text-decoration: none;
+        border-radius: yellow 500px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+     }
+    fieldset div {
+        text-align: left; 
+        padding-left: 50px; 
+        font-size: 25px; 
+        font-family: 'Courgette', cursive;
+    }
+    
+    fieldset div input {
+        font-size: 25px;
+        font-family: 'Courgette', cursive;
+    }
+    
+    
+    fieldset div select {
+        font-size: 25px;
+        font-family: 'Courgette', cursive;
+    }
+    body section button{
+       margin-left: 400px;
+    
+        background-color: rgb(167, 22, 22);
+    }
+    body section button a {
+        font-family: 'Courgette', cursive; 
+        font-size: 25px; text-decoration: none; 
+        color: rgb(252, 249, 249);
+         text-align: center;
+    }
+     body main fieldset{
+        height: 700px;
+         width: 1000px;
+         text-align: center;  
+         margin-left: 100px;
+     }
+    body main form button {
+        margin-left:600px;
+    
+        background-color: rgb(167, 22, 22);
+    }
+    body main form button a{
+        font-family: 'Courgette', cursive; 
+        font-size: 25px; text-decoration: none; 
+        color: rgb(252, 249, 249);
+         text-align: center;
+    }
+    
+    
+    
+    body main ul { 
+        text-align: center;
+         font-family: 'Courgette', cursive;
+          font-size: 25px;
+    
+    }
+    body main h2 { 
+        text-align: center;
+        /* margin-left: 580px; */
+        font-family: 'Staatliches', cursive;
+          font-size: 45px;
+    
+    
+    }
+    
+     
+    
+    
+    li{
+        margin-bottom: 30px;
+    color: #a71616;;
+    
+}
+    
+    body section nav {
+        font-family: 'Courgette', cursive; 
+        font-size: 25px;
+    }
+
+    h4{
+        margin-left: 524px;
+        font-size: 29px;
+    }
+
+  

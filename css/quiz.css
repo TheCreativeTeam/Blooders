@@ -14,24 +14,25 @@ body {
  
 .grid h1 {
     font-family: "sans-serif";
-    background-color: #01BBFF;
     font-size: 60px;
     text-align: center;
-    color: #ffffff;
+    color: rgb(175, 19, 19);
     padding: 2px 0px;
     
 }
  
 #score {
-    color: #01BBFF;
+    color: rgb(184, 59, 28);
     text-align: center;
     font-size: 30px;
+    margin-left: 207px;
+    margin-top: 116px;
 }
  
 .grid #question {
     font-family: "monospace";
     font-size: 30px;
-    color: #01BBFF;
+    color: rgb(175, 19, 19);
 }
  
 .buttons {
@@ -39,10 +40,10 @@ body {
 }
  
 #btn0, #btn1, #btn2, #btn3 {
-    background-color: rgb(16, 3, 73);
+    background-color: rgb(83, 78, 78);
     width: 250px;
     font-size: 20px;
-    color:rgb(238, 95, 95);
+    color:rgb(255, 255, 255);
     border: 1px solid #1D3C6A;
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
@@ -50,7 +51,7 @@ body {
  
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
     cursor: pointer;
-    background-color: #01BBFF;
+    background-color: rgb(184, 59, 28);
 }
  
 #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
