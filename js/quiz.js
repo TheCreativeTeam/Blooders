@@ -4,6 +4,16 @@ function Quiz(questions) {
     this.questionIndex = 0;
 }
  
+
+// create questions here
+var questions = [
+    new Question("One of this list cannot donate:", ["An athletic", "A 22-years old adult","Cancer patient", "A  a person with 55-kg"], "Cancer patient"),
+    new Question("How much blood an adult has?", ["4-5 liters", "10 liters", "1 liters", "450 ml"], "4-5 liters"),
+    new Question("From whom a patient with O+ blood type can get blood?", ["O- blood type person", "AB+ blood type person", "A+ blood type person", "B- blood type person"], "O- blood type person"),
+    new Question("Why you have to provide your personl info when donating?", ["For chatting", "To indruce your self", "NON", "For medical history"], "For medical history"),
+    new Question("For whom an AB- blood type person can give blood", ["A- blood type patient", "B+ blood type patient", "AB+ blood type patient", "All"], "All")
+];
+
 Quiz.prototype.getQuestionIndex = function() {
     return this.questions[this.questionIndex];
 }
@@ -75,14 +85,7 @@ function showScores() {
     element.innerHTML = gameOverHTML;
 };
  
-// create questions here
-var questions = [
-    new Question("One of this list cannot donate:", ["An athletic", "A 22-years old adult","Cancer patient", "A  a person with 55-kg"], "Cancer patient"),
-    new Question("How much blood an adult has?", ["4-5 liters", "10 liters", "1 liters", "450 ml"], "4-5 liters"),
-    new Question("From whom a patient with O+ blood type can get blood?", ["O- blood type person", "AB+ blood type person", "A+ blood type person", "B- blood type person"], "O- blood type person"),
-    new Question("Why you have to provide your personl info when donating?", ["For chatting", "To indruce your self", "NON", "For medical history"], "For medical history"),
-    new Question("For whom an AB- blood type person can give blood", ["A- blood type patient", "B+ blood type patient", "AB+ blood type patient", "All"], "All")
-];
+
  
 // create quiz
 var quiz = new Quiz(questions);
