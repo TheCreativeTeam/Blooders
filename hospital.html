@@ -5,6 +5,7 @@
 <head>
     <title>Hospital</title>
     
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -13,17 +14,11 @@
 
 </head>
 <header class="hbc">
-        <h1 style="margin-right: 500px;" id="first"> Blood donation </h1>
-        <img style="float: left;  width: 160px; margin-top: 40px; margin-left: 500px;" src="img/loogo.png" alt="">
+        <h1 > Blood donation </h1>
+        <img src="img/loogo.png" alt="">
         <div>
-            <nav style=" display: inline;   ">
-                <!-- <a class="navbar-brand" href="#"><img src="/img/logoo1.jpg"></a> -->
-    
-    
-                <ul style=" text-align: center; ">
-    
-    
-    
+            <nav >
+                    <ul >
                         <li id="demotext">
                                 <a class="nav-link" href="index.html">Home page</a>
                             </li>
@@ -39,7 +34,7 @@
     
     
                     <li id="demotext">
-                        <a class="nav-link" href="/#about">About Us</a>
+                        <a class="nav-link" href="/#about">Overview</a>
                     </li>
                     <li id="demotext">
                         <a class="nav-link" href="blooders.html"> Blooders Team </a>
@@ -50,17 +45,17 @@
         </div>
     
     </header>
-<body style=" background:url(https://www.urbannetwork.co.uk/wp-content/uploads/2014/12/Grey-background.jpg);">
-    <main class ="hos-form">
+<body>
+    <main >
         
-        <form id="hospital" action="js/hospital.js">
-            <fieldset style="height: 700px; width: 1000px; text-align: center; margin-left: 530px;  ">
-                <legend style="text-align: left; padding-left: 50px; font-size: 40px;" > <h2>Information about The Hospital</h2></legend>
-               <div  style="text-align: left; padding-left: 50px; font-size: 25px; font-family: 'Courgette', cursive;" > 
+        <form >
+            <fieldset> <br> <br>
+                <legend> <h2>Information about The Hospital</h2> <br><br><br><br></legend>
+               <div > 
                 <label>Hospital Name: </label>
-                <input  style=" font-size: 25px;"  type="text" name="name" placeholder="Enter the hospital name">
+                <input type="text" name="name" placeholder="Enter the hospital name">
               &nbsp; &nbsp;  &nbsp;  <label> Location: </label>
-                <select style=" font-size: 25px;" name="location">
+                <select name="location">
                     <option value="Irbed">Irbed</option>
                     <option value="Ajloon">Ajloon</option>
                     <option value="Jarash">Jarash</option>
@@ -85,15 +80,20 @@
                <br>
                <br>
                 <label>Quantity</label>
-                <input style=" font-size: 25px;"  type="number" name="quantity" placeholder="Enter how many units">
+                <input   type="number" name="quantity" placeholder="Enter how many units">
                 &nbsp; &nbsp;  &nbsp;    <label>The Email</label>
-                <input style=" font-size: 25px;"  type="email" name="email" placeholder="Enter the hospital email">
+                <input   type="email" name="email" placeholder="Enter the hospital email">
             </fieldset> </div> <br> <br> <br>
-            <button style="background-color: rgb(167, 22, 22);"> <a
-                style="font-family: 'Courgette', cursive; font-size: 25px; text-decoration: none; color: white; text-align: center; " type="submit">Submit</button>
-            <!-- <button type="click" id="clickId"> render </button> -->
+            <button > <a type="submit">Submit</a>
+            </button>
         </form>
-        <div><h2 style="font-size: 50px;">Donors:</h2>
+        <div>
+            <br>
+            <br>
+            <br>
+            <h2 style="margin-left: 580px">Donors:</h2>
+            <br>
+            <br>
             <br>
             <ul id="donorInfo" >  </ul>
             <br>
@@ -108,5 +108,9 @@
     </main>
 
 </body>
-
+<footer >
+        <p>© 2019 Copyright</p>
+    </footer>
+    <br>
+    <br>
 </html>
