@@ -52,17 +52,9 @@ function submitHandler(event) {
 }
 
 
-
-
-
 form.addEventListener('submit', submitHandler);
 
 var ll= Donar.all[Donar.all.length-1].location
-
-
-
-
-
 
 
 
