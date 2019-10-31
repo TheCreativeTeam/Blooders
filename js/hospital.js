@@ -12,9 +12,7 @@ hospitalForm.addEventListener('submit', function (event) {
     var quantity = event.target.quantity.value;
     var email = event.target.email.value;
     var newHospital = new Hospital(name, location, type, quantity, email)
-    console.log(newHospital);
-    // console.log('Hospital.all : ', Hospital.all);
     localStorage.setItem('hospitalKey', JSON.stringify(Hospital.all));
-    // newHospital.render();
+    alert('Your request has been recieved.');
 });
 
