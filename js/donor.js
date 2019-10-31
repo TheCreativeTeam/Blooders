@@ -1,5 +1,5 @@
 'use strict'
-var mapArray=[];
+var mapArray = [];
 
 var donar1 = new Donar('ahmad', 'O+', 'Amman', 36, 'ahmad_lkki@gmail.com')
 var form = document.getElementById("donor");
@@ -31,7 +31,7 @@ function submitHandler(event) {
     var donorAge = event.target.age.value;
     var donorEmail = event.target.email.value;
 
-    locationDonor=donorLocation;
+    locationDonor = donorLocation;
 
     if (donorAge < 18) {
         alert('You are under 18')
@@ -43,9 +43,9 @@ function submitHandler(event) {
 
         localStorage.setItem('donorKey', JSON.stringify(Donar.all));
 
-        if(locationDonor=='Amman'){
-            
-        
+        if (locationDonor == 'Amman') {
+
+
         }
     }
     return locationDonor;
@@ -54,21 +54,21 @@ function submitHandler(event) {
 
 form.addEventListener('submit', submitHandler);
 
-var ll= Donar.all[Donar.all.length-1].location
+var ll = Donar.all[Donar.all.length - 1].location
 
 
 
 var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: firstC,
-    zoom: 10 
-  }
-  
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: firstC,
+        zoom: 10
+    }
 
-  );
-  var marker = new google.maps.Marker({position: firstC, map: map});
-  var marker = new google.maps.Marker({position: secondC, map: map});
+
+    );
+    var marker = new google.maps.Marker({ position: firstC, map: map });
+    var marker = new google.maps.Marker({ position: secondC, map: map });
 
 }
 

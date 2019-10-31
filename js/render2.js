@@ -15,7 +15,7 @@ function render2(event) {
         var li = document.createElement('li');
 
         container2.appendChild(li);
-        li.textContent = "There are patient(s) in " + instanceDemands.name +' hospital ' +" in " + instanceDemands.location + " need " + instanceDemands.quantity + ' unit(s) of  ' + instanceDemands.type + "  blood type ";
+        li.textContent = "There are patient(s) in " + instanceDemands.name + ' hospital ' + " in " + instanceDemands.location + " need " + instanceDemands.quantity + ' unit(s) of  ' + instanceDemands.type + "  blood type ";
 
     }
 
