@@ -1,22 +1,13 @@
 'use strict'
-var mapArray = [];
+
 
 var donar1 = new Donar('ahmad', 'O+', 'Amman', 36, 'ahmad_lkki@gmail.com')
 var form = document.getElementById("donor");
 console.log('form : ', form);
 
 // console.log('container : ', container);
-function addElement(tagName, container, text) {
-    var element = document.createElement(tagName);
-    container.appendChild(element);
-    if (text) {
-        element.textContent = text;
-    }
 
-    return element;
-}
 
-var locationDonor
 
 function submitHandler(event) {
     event.preventDefault();
@@ -31,10 +22,10 @@ function submitHandler(event) {
     var donorAge = event.target.age.value;
     var donorEmail = event.target.email.value;
 
-    locationDonor = donorLocation;
+    
 
     if (donorAge < 18) {
-        alert('You are under 18')
+        alert('You are still young, keep your blood.');
     }
     else {
 
@@ -43,18 +34,17 @@ function submitHandler(event) {
 
         localStorage.setItem('donorKey', JSON.stringify(Donar.all));
 
-        if (locationDonor == 'Amman') {
+        alert('Thank you for saving a life.')
 
-
-        }
+      
     }
-    return locationDonor;
+    
 }
 
 
 form.addEventListener('submit', submitHandler);
 
-var ll = Donar.all[Donar.all.length - 1].location
+
 
 
 

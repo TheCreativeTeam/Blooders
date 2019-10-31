@@ -1,9 +1,7 @@
 
 
 var container2 = document.getElementById('hos');
-console.log('container : ', container2);
 function render2(event) {
-    // event.preventDefault();
 
 
 
@@ -22,9 +20,7 @@ function render2(event) {
 }
 
 var rendClick = document.getElementById('clickId')
-console.log('rendClick : ', rendClick);
 
-// rendClick.addEventListener('click',render)
 
 render2();
 
